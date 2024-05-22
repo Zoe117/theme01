@@ -7,5 +7,9 @@ function theme_slug_enqueue_styles() {
 		get_stylesheet_uri()
 	);
 }
+wp_enqueue_scripts(
+	'theme-slug-style', 
+	get_parent_theme_file()
+)
 
 ?>
